@@ -36,6 +36,7 @@ const config: Config = {
   projectName: 'superset',
   themes: ['@saucelabs/theme-github-codeblock'],
   plugins: [
+    require.resolve('./src/webpack.extend.ts'),
     [
       'docusaurus-plugin-less',
       {
@@ -202,6 +203,9 @@ const config: Config = {
         sidebarPath: require.resolve('./sidebarComponents.js'),
         editUrl:
           'https://github.com/apache/superset/edit/master/docs/components',
+        remarkPlugins: [require('remark-import-partial')],
+        // Enable MDX v2
+        docItemComponent: '@theme/DocItem',
       },
     ],
   ],
