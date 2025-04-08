@@ -290,7 +290,7 @@ describe('async actions', () => {
     });
 
     it('calls queryFailed on fetch error and logs the error details', () => {
-      expect.assertions(3);
+      expect.assertions(2);
 
       fetchMock.post(
         runQueryEndpoint,
@@ -308,7 +308,6 @@ describe('async actions', () => {
       const expectedActionTypes = [
         actions.START_QUERY,
         LOG_EVENT,
-        LOG_EVENT,
         actions.QUERY_FAILED,
       ];
       const { dispatch } = store;
@@ -316,12 +315,7 @@ describe('async actions', () => {
       return request(dispatch, () => initialState).then(() => {
         const actions = store.getActions();
         expect(actions.map(a => a.type)).toEqual(expectedActionTypes);
-        expect(actions[1].payload.eventData.error_details).toContain(
-          'Issue 1000',
-        );
-        expect(actions[2].payload.eventData.error_details).toContain(
-          'Issue 1001',
-        );
+        expect(actions[1].payload.eventData.issue_codes).toEqual([1000, 1001]);
       });
     });
   });
