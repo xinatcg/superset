@@ -17,10 +17,8 @@
  * under the License.
  */
 import { createRef, PureComponent } from 'react';
-import { Select } from 'src/components';
+import { Select, Alert, Button } from 'src/components';
 import { t, styled } from '@superset-ui/core';
-import Alert from 'src/components/Alert';
-import Button from 'src/components/Button';
 import { Input } from 'src/components/Input';
 
 import ModalTrigger, { ModalTriggerRef } from 'src/components/ModalTrigger';

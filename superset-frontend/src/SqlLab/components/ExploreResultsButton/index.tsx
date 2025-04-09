@@ -18,7 +18,8 @@
  */
 import { t } from '@superset-ui/core';
 import { InfoTooltipWithTrigger } from '@superset-ui/chart-controls';
-import Button, { OnClickHandler } from 'src/components/Button';
+import { Button } from 'src/components';
+import { OnClickHandler } from 'src/components/Button/types';
 
 export interface ExploreResultsButtonProps {
   database?: {

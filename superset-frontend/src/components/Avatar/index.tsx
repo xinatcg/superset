@@ -18,7 +18,7 @@
  */
 
 import { Avatar as AntdAvatar } from 'antd-v5';
-import { AvatarProps, GroupProps } from 'antd-v5/es/avatar';
+import type { AvatarProps, GroupProps } from './types';
 
 export function Avatar(props: AvatarProps) {
   return <AntdAvatar {...props} />;
@@ -27,5 +27,3 @@ export function Avatar(props: AvatarProps) {
 export function AvatarGroup(props: GroupProps) {
   return <AntdAvatar.Group {...props} />;
 }
-
-export type { AvatarProps, GroupProps };

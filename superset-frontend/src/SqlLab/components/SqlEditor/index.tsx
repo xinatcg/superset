@@ -51,12 +51,10 @@ import type {
 } from 'src/SqlLab/types';
 import type { DatabaseObject } from 'src/features/databases/types';
 import { debounce, throttle, isEmpty } from 'lodash';
-import Modal from 'src/components/Modal';
 import Mousetrap from 'mousetrap';
-import Button from 'src/components/Button';
+import { Button, Alert, Dropdown, EmptyState, Modal } from 'src/components';
 import Timer from 'src/components/Timer';
 import ResizableSidebar from 'src/components/ResizableSidebar';
-import { Dropdown } from 'src/components/Dropdown';
 import Skeleton from 'src/components/Skeleton';
 import { Switch } from 'src/components/Switch';
 import { Input } from 'src/components/Input';
@@ -101,8 +99,6 @@ import {
   LocalStorageKeys,
   setItem,
 } from 'src/utils/localStorageHelpers';
-import { EmptyState } from 'src/components/EmptyState';
-import Alert from 'src/components/Alert';
 import getBootstrapData from 'src/utils/getBootstrapData';
 import useLogAction from 'src/logger/useLogAction';
 import {

@@ -18,7 +18,7 @@
  */
 
 import { useState } from 'react';
-import Collapse from 'src/components/Collapse';
+import { Collapse } from 'src/components';
 import { Input } from 'src/components/Input';
 import { FormItem } from 'src/components/Form';
 import { CustomParametersChangeType, FieldPropTypes } from '../../types';

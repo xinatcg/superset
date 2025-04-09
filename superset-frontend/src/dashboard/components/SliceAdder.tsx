@@ -24,9 +24,8 @@ import { FixedSizeList as List } from 'react-window';
 import { createFilter } from 'react-search-input';
 import { t, styled, css } from '@superset-ui/core';
 import { Input } from 'src/components/Input';
-import { Select } from 'src/components';
+import { Button, Select, Checkbox } from 'src/components';
 import Loading from 'src/components/Loading';
-import Button from 'src/components/Button';
 import { Icons } from 'src/components/Icons';
 import {
   LocalStorageKeys,
@@ -42,7 +41,6 @@ import {
   NEW_COMPONENTS_SOURCE_ID,
 } from 'src/dashboard/util/constants';
 import { debounce, pickBy } from 'lodash';
-import Checkbox from 'src/components/Checkbox';
 import { InfoTooltipWithTrigger } from '@superset-ui/chart-controls';
 import { Dispatch } from 'redux';
 import { Slice } from 'src/dashboard/types';

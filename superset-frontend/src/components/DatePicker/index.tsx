@@ -16,8 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { DatePicker as AntdDatePicker, DatePickerProps } from 'antd-v5';
+import { DatePicker as AntdDatePicker } from 'antd-v5';
 import { css } from '@superset-ui/core';
+import type { DatePickerProps } from './types';
 
 export const DatePicker = (props: DatePickerProps) => (
   <AntdDatePicker

@@ -21,9 +21,14 @@
 import { useState, useRef, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import type { Table } from 'src/SqlLab/types';
-import Collapse, { CollapseProps } from 'src/components/Collapse';
-import Card from 'src/components/Card';
-import ButtonGroup from 'src/components/ButtonGroup';
+import type { CollapseProps } from 'src/components/Collapse/types';
+import {
+  ButtonGroup,
+  Card,
+  Collapse,
+  Tooltip,
+  CopyToClipboard,
+} from 'src/components';
 import { t, styled, useTheme } from '@superset-ui/core';
 import { debounce } from 'lodash';
 
@@ -38,8 +43,6 @@ import {
   useTableExtendedMetadataQuery,
   useTableMetadataQuery,
 } from 'src/hooks/apiResources';
-import { Tooltip } from 'src/components/Tooltip';
-import CopyToClipboard from 'src/components/CopyToClipboard';
 import { IconTooltip } from 'src/components/IconTooltip';
 import ModalTrigger from 'src/components/ModalTrigger';
 import Loading from 'src/components/Loading';

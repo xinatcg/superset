@@ -18,7 +18,7 @@
  */
 import { useTheme, SafeMarkdown } from '@superset-ui/core';
 import { Icons, IconType } from 'src/components/Icons';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 
 export interface WarningIconWithTooltipProps {
   warningMarkdown: string;

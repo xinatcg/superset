@@ -25,8 +25,7 @@ import { useListViewResource } from 'src/views/CRUD/hooks';
 import { createErrorHandler, createFetchRelated } from 'src/views/CRUD/utils';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import SubMenu, { SubMenuProps } from 'src/features/home/SubMenu';
-import DeleteModal from 'src/components/DeleteModal';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
+import { DeleteModal, ConfirmStatusChange, ModifiedInfo } from 'src/components';
 import ActionsBar, { ActionProps } from 'src/components/ListView/ActionsBar';
 import ListView, {
   ListViewProps,
@@ -35,7 +34,6 @@ import ListView, {
 } from 'src/components/ListView';
 import CssTemplateModal from 'src/features/cssTemplates/CssTemplateModal';
 import { TemplateObject } from 'src/features/cssTemplates/types';
-import { ModifiedInfo } from 'src/components/AuditInfo';
 import { QueryObjectColumns } from 'src/views/CRUD/types';
 import { Icons } from 'src/components/Icons';
 

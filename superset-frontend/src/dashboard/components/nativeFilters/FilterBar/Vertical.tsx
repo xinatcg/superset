@@ -33,7 +33,7 @@ import cx from 'classnames';
 import { styled, t, useTheme } from '@superset-ui/core';
 import { Icons } from 'src/components/Icons';
 import Loading from 'src/components/Loading';
-import { EmptyState } from 'src/components/EmptyState';
+import { EmptyState } from 'src/components';
 import { getFilterBarTestId } from './utils';
 import { VerticalBarProps } from './types';
 import Header from './Header';

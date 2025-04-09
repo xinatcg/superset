@@ -21,8 +21,7 @@ import { omit } from 'lodash';
 import { Input } from 'src/components/Input';
 import { Form, FormItem } from 'src/components/Form';
 import jsonStringify from 'json-stringify-pretty-compact';
-import Button from 'src/components/Button';
-import { AsyncSelect } from 'src/components';
+import { Button, AsyncSelect, JsonEditor, Modal } from 'src/components';
 import { Row, Col } from 'src/components/Grid';
 import rison from 'rison';
 import {
@@ -36,9 +35,6 @@ import {
   getClientErrorObject,
   css,
 } from '@superset-ui/core';
-
-import Modal from 'src/components/Modal';
-import { JsonEditor } from 'src/components/AsyncAceEditor';
 
 import ColorSchemeControlWrapper from 'src/dashboard/components/ColorSchemeControlWrapper';
 import FilterScopeModal from 'src/dashboard/components/filterscope/FilterScopeModal';

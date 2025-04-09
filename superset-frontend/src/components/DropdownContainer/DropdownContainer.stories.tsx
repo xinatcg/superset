@@ -19,9 +19,9 @@
 import { useRef, useCallback, useState } from 'react';
 import { isEqual } from 'lodash';
 import { css } from '@superset-ui/core';
-import { Select } from 'src/components';
-import Button from '../Button';
-import DropdownContainer, { DropdownContainerProps, Ref } from '.';
+import { Button, Select } from 'src/components';
+import type { DropdownContainerProps, Ref } from './types';
+import { DropdownContainer } from '.';
 
 export default {
   title: 'Design System/Components/DropdownContainer',

@@ -18,11 +18,9 @@
  */
 import { ReactNode, ComponentType, ReactElement, FC } from 'react';
 import { styled, useTheme } from '@superset-ui/core';
-import Card from 'src/components/Card';
 import Skeleton from 'src/components/Skeleton';
-import { Tooltip } from 'src/components/Tooltip';
+import { Card, CertifiedBadge, Tooltip } from 'src/components';
 import ImageLoader, { BackgroundPosition } from './ImageLoader';
-import CertifiedBadge from '../CertifiedBadge';
 
 const ActionsWrapper = styled.div`
   width: 64px;

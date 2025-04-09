@@ -22,7 +22,7 @@ import dayjs from 'dayjs';
 import { useEffect, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import ListView from 'src/components/ListView';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import SubMenu from 'src/features/home/SubMenu';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import { fDuration } from 'src/utils/dates';

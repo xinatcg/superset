@@ -22,7 +22,7 @@ import { debounce } from 'lodash';
 import { getUrlParam } from 'src/utils/urlUtils';
 import Grid, { Row, Col } from 'src/components/Grid';
 import { MainNav, MenuMode } from 'src/components/Menu';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { NavLink, useLocation } from 'react-router-dom';
 import { GenericLink } from 'src/components/GenericLink/GenericLink';
 import { Icons } from 'src/components/Icons';

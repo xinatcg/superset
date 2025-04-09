@@ -16,17 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { type ComponentProps } from 'react';
-
 import { Dropdown } from 'antd-v5';
-import { Tooltip, TooltipPlacement } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { kebabCase } from 'lodash';
 import { css, useTheme } from '@superset-ui/core';
-
-export type DropdownButtonProps = ComponentProps<typeof Dropdown.Button> & {
-  tooltip?: string;
-  tooltipPlacement?: TooltipPlacement;
-};
+import type { DropdownButtonProps } from './types';
 
 export const DropdownButton = ({
   dropdownRender,

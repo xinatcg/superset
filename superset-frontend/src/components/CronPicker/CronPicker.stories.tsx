@@ -17,9 +17,10 @@
  * under the License.
  */
 import { useState, useRef, useCallback } from 'react';
-import { Divider } from 'src/components/Divider';
+import { Divider } from 'src/components';
 import { Input } from 'src/components/Input';
-import { CronPicker, CronError, CronProps } from '.';
+import { CronPicker } from '.';
+import type { CronError, CronProps } from './types';
 
 export default {
   title: 'CronPicker',

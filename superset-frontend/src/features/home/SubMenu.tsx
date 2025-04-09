@@ -21,11 +21,11 @@ import { ReactNode, useState, useEffect, FunctionComponent } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { styled, SupersetTheme, css, t, useTheme } from '@superset-ui/core';
 import cx from 'classnames';
-import { Tooltip } from 'src/components/Tooltip';
 import { debounce } from 'lodash';
 import { Row } from 'src/components/Grid';
 import { Menu, MenuMode, MainNav } from 'src/components/Menu';
-import Button, { OnClickHandler } from 'src/components/Button';
+import { Button, Tooltip } from 'src/components';
+import { OnClickHandler } from 'src/components/Button/types';
 import { Icons } from 'src/components/Icons';
 import { MenuObjectProps } from 'src/types/bootstrapTypes';
 

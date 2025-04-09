@@ -22,10 +22,9 @@ import type { DatabaseObject } from 'src/features/databases/types';
 import { Row, Col } from 'src/components/Grid';
 import { Input } from 'src/components/Input';
 import { t, styled } from '@superset-ui/core';
-import Button from 'src/components/Button';
+import { Button, Modal } from 'src/components';
 import { Menu } from 'src/components/Menu';
 import { Form, FormItem } from 'src/components/Form';
-import Modal from 'src/components/Modal';
 import SaveDatasetActionButton from 'src/SqlLab/components/SaveDatasetActionButton';
 import {
   SaveDatasetModal,

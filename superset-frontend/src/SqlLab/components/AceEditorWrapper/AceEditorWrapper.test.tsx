@@ -22,10 +22,8 @@ import { QueryEditor } from 'src/SqlLab/types';
 import { Store } from 'redux';
 import { initialState, defaultQueryEditor } from 'src/SqlLab/fixtures';
 import AceEditorWrapper from 'src/SqlLab/components/AceEditorWrapper';
-import {
-  AsyncAceEditorProps,
-  FullSQLEditor,
-} from 'src/components/AsyncAceEditor';
+import { FullSQLEditor } from 'src/components';
+import { AsyncAceEditorProps } from 'src/components/AsyncAceEditor/types';
 import {
   queryEditorSetCursorPosition,
   queryEditorSetDb,

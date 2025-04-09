@@ -17,7 +17,6 @@
  * under the License.
  */
 import {
-  CSSProperties,
   useEffect,
   useState,
   RefObject,
@@ -29,15 +28,7 @@ import {
 } from 'react';
 
 import Loading from '../Loading';
-
-export type PlaceholderProps = {
-  showLoadingForImport?: boolean;
-  width?: string | number;
-  height?: string | number;
-  placeholderStyle?: CSSProperties;
-} & {
-  [key: string]: any;
-};
+import type { PlaceholderProps } from './types';
 
 function DefaultPlaceholder({
   width,
@@ -62,7 +53,7 @@ function DefaultPlaceholder({
  * Asynchronously import an ES module as a React component, render a placeholder
  * first (if provided) and re-render once import is complete.
  */
-export default function AsyncEsmComponent<
+export function AsyncEsmComponent<
   P = PlaceholderProps,
   M = ComponentType<P> | { default: ComponentType<P> },
 >(

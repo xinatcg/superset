@@ -24,7 +24,7 @@ import { t } from '@superset-ui/core';
 import Label from 'src/components/Label';
 import Popover from 'src/components/Popover';
 import PopoverSection from 'src/components/PopoverSection';
-import Checkbox from 'src/components/Checkbox';
+import { Checkbox } from 'src/components';
 import ControlHeader from '../ControlHeader';
 import SelectControl from './SelectControl';
 

@@ -19,7 +19,7 @@
 import { EventHandler, ChangeEvent, MouseEvent, ReactNode } from 'react';
 import { t, SupersetTheme } from '@superset-ui/core';
 import SupersetText from 'src/utils/textUtils';
-import Button from 'src/components/Button';
+import { Button } from 'src/components';
 import { Input } from 'src/components/Input';
 import { StyledInputContainer, wideButton } from './styles';
 import { DatabaseObject } from '../types';

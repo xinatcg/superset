@@ -43,7 +43,7 @@ import ListView, {
   FilterOperator,
   ListViewProps,
 } from 'src/components/ListView';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/light';
 import sql from 'react-syntax-highlighter/dist/cjs/languages/hljs/sql';
 import github from 'react-syntax-highlighter/dist/cjs/styles/hljs/github';

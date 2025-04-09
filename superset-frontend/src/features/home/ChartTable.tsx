@@ -43,7 +43,7 @@ import ChartCard from 'src/features/charts/ChartCard';
 import Chart from 'src/types/Chart';
 import handleResourceExport from 'src/utils/export';
 import Loading from 'src/components/Loading';
-import ErrorBoundary from 'src/components/ErrorBoundary';
+import { ErrorBoundary } from 'src/components';
 import { Icons } from 'src/components/Icons';
 import EmptyState from './EmptyState';
 import { WelcomeTable } from './types';

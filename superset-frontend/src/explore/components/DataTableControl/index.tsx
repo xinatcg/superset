@@ -38,10 +38,9 @@ import {
 } from 'src/constants';
 import { Radio } from 'src/components/Radio';
 import { Icons } from 'src/components/Icons';
-import Button from 'src/components/Button';
+import { Button, CopyToClipboard } from 'src/components';
 import Popover from 'src/components/Popover';
 import { prepareCopyToClipboardTabularData } from 'src/utils/common';
-import CopyToClipboard from 'src/components/CopyToClipboard';
 import { getTimeColumns, setTimeColumns } from './utils';
 
 export const CellNull = styled('span')`

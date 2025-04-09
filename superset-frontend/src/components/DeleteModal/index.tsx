@@ -17,10 +17,11 @@
  * under the License.
  */
 import { t, styled } from '@superset-ui/core';
-import { useState, ReactNode, ChangeEvent } from 'react';
+import { useState, ChangeEvent } from 'react';
 import { Input } from 'src/components/Input';
-import Modal from 'src/components/Modal';
+import { Modal } from 'src/components';
 import { FormLabel } from 'src/components/Form';
+import type { DeleteModalProps } from './types';
 
 const StyledDiv = styled.div`
   padding-top: 8px;
@@ -35,15 +36,7 @@ const DescriptionContainer = styled.div`
   padding-top: 16px;
 `;
 
-interface DeleteModalProps {
-  description: ReactNode;
-  onConfirm: () => void;
-  onHide: () => void;
-  open: boolean;
-  title: ReactNode;
-}
-
-export default function DeleteModal({
+export function DeleteModal({
   description,
   onConfirm,
   onHide,

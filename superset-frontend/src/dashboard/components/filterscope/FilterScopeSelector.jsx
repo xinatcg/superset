@@ -19,7 +19,7 @@
 import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import Button from 'src/components/Button';
+import { Button } from 'src/components';
 import { Input } from 'src/components/Input';
 import { css, t, styled } from '@superset-ui/core';
 

@@ -20,7 +20,7 @@ import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { t } from '@superset-ui/core';
 
-import { PluginContext } from 'src/components/DynamicPlugins';
+import { PluginContext } from 'src/components';
 import Loading from 'src/components/Loading';
 import getBootstrapData from 'src/utils/getBootstrapData';
 import getChartIdsFromLayout from '../util/getChartIdsFromLayout';

@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import Button from 'src/components/Button';
+import { Button } from 'src/components';
 import Popover, { PopoverProps } from 'src/components/Popover';
 
 export default {

@@ -21,7 +21,7 @@ import { act, fireEvent, render } from 'spec/helpers/testing-library';
 import Header from './Header';
 import { PIVOT_COL_ID } from './constants';
 
-jest.mock('src/components/Dropdown', () => ({
+jest.mock('src/components', () => ({
   Dropdown: () => <div data-test="mock-dropdown" />,
 }));
 

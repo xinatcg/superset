@@ -41,7 +41,7 @@ import Loading from 'src/components/Loading';
 import BooleanCell from 'src/components/Table/cell-renderers/BooleanCell';
 import NullCell from 'src/components/Table/cell-renderers/NullCell';
 import TimeCell from 'src/components/Table/cell-renderers/TimeCell';
-import { EmptyState } from 'src/components/EmptyState';
+import { EmptyState } from 'src/components';
 import { getDatasourceSamples } from 'src/components/Chart/chartAction';
 import Table, { ColumnsType, TableSize } from 'src/components/Table';
 import HeaderWithRadioGroup from 'src/components/Table/header-renderers/HeaderWithRadioGroup';

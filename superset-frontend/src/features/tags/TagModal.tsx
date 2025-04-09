@@ -19,14 +19,11 @@
 import { ChangeEvent, useState, useEffect, FC } from 'react';
 
 import rison from 'rison';
-import Modal from 'src/components/Modal';
-import { AsyncSelect } from 'src/components';
+import { AsyncSelect, Button, Divider, Modal } from 'src/components';
 import { FormLabel } from 'src/components/Form';
 import { t, styled, SupersetClient } from '@superset-ui/core';
 // eslint-disable-next-line no-restricted-imports
 import { Input } from 'antd'; // TODO: Remove antd
-import { Divider } from 'src/components/Divider';
-import Button from 'src/components/Button';
 import { Tag } from 'src/views/CRUD/types';
 import { fetchObjectsByTagIds } from 'src/features/tags/tags';
 

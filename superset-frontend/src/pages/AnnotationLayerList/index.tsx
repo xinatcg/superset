@@ -31,11 +31,9 @@ import ListView, {
   Filters,
   FilterOperator,
 } from 'src/components/ListView';
-import DeleteModal from 'src/components/DeleteModal';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
+import { DeleteModal, ConfirmStatusChange, ModifiedInfo } from 'src/components';
 import AnnotationLayerModal from 'src/features/annotationLayers/AnnotationLayerModal';
 import { AnnotationLayerObject } from 'src/features/annotationLayers/types';
-import { ModifiedInfo } from 'src/components/AuditInfo';
 import { QueryObjectColumns } from 'src/views/CRUD/types';
 import { Icons } from 'src/components/Icons';
 

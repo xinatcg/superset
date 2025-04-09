@@ -17,7 +17,8 @@
  * under the License.
  */
 import { render, screen, waitFor } from 'spec/helpers/testing-library';
-import AsyncAceEditor, {
+import {
+  AsyncAceEditor,
   SQLEditor,
   FullSQLEditor,
   MarkdownEditor,
@@ -27,7 +28,7 @@ import AsyncAceEditor, {
   ConfigEditor,
   AceModule,
   AsyncAceEditorOptions,
-} from 'src/components/AsyncAceEditor';
+} from '.';
 
 const selector = '[id="ace-editor"]';
 

@@ -20,9 +20,8 @@ import { t, customTimeRangeDecode } from '@superset-ui/core';
 import { InfoTooltipWithTrigger } from '@superset-ui/chart-controls';
 import { Col, Row } from 'src/components/Grid';
 import { InputNumber } from 'src/components/Input';
-import { DatePicker } from 'src/components/DatePicker';
 import { Radio } from 'src/components/Radio';
-import { Select } from 'src/components';
+import { DatePicker, Select, AntdThemeProvider } from 'src/components';
 import {
   SINCE_GRAIN_OPTIONS,
   SINCE_MODE_OPTIONS,
@@ -39,7 +38,6 @@ import {
 } from 'src/explore/components/controls/DateFilterControl/types';
 import Loading from 'src/components/Loading';
 import { Dayjs } from 'dayjs';
-import { AntdThemeProvider } from 'src/components/AntdThemeProvider';
 import { useLocale } from 'src/hooks/useLocale';
 
 export function CustomFrame(props: FrameComponentProps) {

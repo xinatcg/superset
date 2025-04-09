@@ -18,8 +18,7 @@
  */
 import { useRef, useState } from 'react';
 import { SupersetTheme, css, t } from '@superset-ui/core';
-import { Select } from 'src/components';
-import Button from 'src/components/Button';
+import { Button, Select } from 'src/components';
 import { Input } from 'src/components/Input';
 import { FormLabel } from 'src/components/Form';
 import { Icons } from 'src/components/Icons';

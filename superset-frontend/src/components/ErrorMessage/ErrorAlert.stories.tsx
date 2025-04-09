@@ -19,8 +19,8 @@
 import { Meta, StoryFn } from '@storybook/react';
 import Layout from 'src/components/Layout';
 import { Row, Col } from 'src/components/Grid';
-import Card from 'src/components/Card';
-import ErrorAlert from './ErrorAlert';
+import { Card } from 'src/components';
+import { ErrorAlert } from './ErrorAlert';
 
 const { Content } = Layout;
 

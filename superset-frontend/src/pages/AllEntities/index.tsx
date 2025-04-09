@@ -20,7 +20,7 @@ import { useEffect, useState } from 'react';
 import { styled, t, css, SupersetTheme } from '@superset-ui/core';
 import { NumberParam, useQueryParam } from 'use-query-params';
 import AllEntitiesTable from 'src/features/allEntities/AllEntitiesTable';
-import Button from 'src/components/Button';
+import { Button } from 'src/components';
 import MetadataBar, {
   MetadataType,
   Description,

@@ -39,8 +39,8 @@ import JSONbig from 'json-bigint';
 import { FC, useMemo } from 'react';
 import { JSONTree } from 'react-json-tree';
 import { useJsonTreeTheme } from 'src/hooks/useJsonTreeTheme';
-import Button from '../Button';
-import CopyToClipboard from '../CopyToClipboard';
+import { Button } from 'src/components';
+import { CopyToClipboard } from '../CopyToClipboard';
 import ModalTrigger from '../ModalTrigger';
 
 export function safeJsonObjectParse(

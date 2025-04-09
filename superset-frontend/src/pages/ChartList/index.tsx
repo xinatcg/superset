@@ -42,10 +42,16 @@ import {
   useListViewResource,
 } from 'src/views/CRUD/hooks';
 import handleResourceExport from 'src/utils/export';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
+import {
+  ConfirmStatusChange,
+  CertifiedBadge,
+  Tooltip,
+  ModifiedInfo,
+  FaveStar,
+  FacePile,
+} from 'src/components';
 import TagsList from 'src/components/TagsList';
 import SubMenu, { SubMenuProps } from 'src/features/home/SubMenu';
-import FaveStar from 'src/components/FaveStar';
 import { Link, useHistory } from 'react-router-dom';
 import ListView, {
   Filter,
@@ -61,19 +67,15 @@ import PropertiesModal from 'src/explore/components/PropertiesModal';
 import ImportModelsModal from 'src/components/ImportModal/index';
 import Chart from 'src/types/Chart';
 import Tag from 'src/types/TagType';
-import { Tooltip } from 'src/components/Tooltip';
 import { Icons } from 'src/components/Icons';
 import { nativeFilterGate } from 'src/dashboard/components/nativeFilters/utils';
 import InfoTooltip from 'src/components/InfoTooltip';
-import CertifiedBadge from 'src/components/CertifiedBadge';
 import { GenericLink } from 'src/components/GenericLink/GenericLink';
 import { loadTags } from 'src/components/Tag/utils';
-import FacePile from 'src/components/FacePile';
 import ChartCard from 'src/features/charts/ChartCard';
 import { UserWithPermissionsAndRoles } from 'src/types/bootstrapTypes';
 import { findPermission } from 'src/utils/findPermission';
 import { DashboardCrossLinks } from 'src/components/ListView/DashboardCrossLinks';
-import { ModifiedInfo } from 'src/components/AuditInfo';
 import { QueryObjectColumns } from 'src/views/CRUD/types';
 
 const FlexRowContainer = styled.div`

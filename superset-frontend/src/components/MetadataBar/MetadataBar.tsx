@@ -20,7 +20,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useResizeDetector } from 'react-resize-detector';
 import { uniqWith } from 'lodash';
 import { styled } from '@superset-ui/core';
-import { Tooltip, TooltipPlacement } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
+import { TooltipPlacement } from 'src/components/Tooltip/types';
 import { ContentType } from './ContentType';
 import { config } from './ContentConfig';
 import {

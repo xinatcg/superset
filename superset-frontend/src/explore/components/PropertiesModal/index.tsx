@@ -18,10 +18,8 @@
  */
 import { ChangeEvent, useMemo, useState, useCallback, useEffect } from 'react';
 
-import Modal from 'src/components/Modal';
+import { Modal, AsyncSelect, Button } from 'src/components';
 import { Input } from 'src/components/Input';
-import Button from 'src/components/Button';
-import { AsyncSelect } from 'src/components';
 import { SelectValue } from 'src/components/Select';
 import { Row, Col } from 'src/components/Grid';
 import rison from 'rison';

@@ -17,7 +17,7 @@
  * under the License.
  */
 import { ReactNode } from 'react';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 
 export interface Props {
   children?: ReactNode;

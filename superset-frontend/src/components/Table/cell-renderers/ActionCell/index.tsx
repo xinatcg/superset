@@ -18,7 +18,8 @@
  */
 import { useState, useEffect } from 'react';
 import { styled } from '@superset-ui/core';
-import { MenuDotsDropdown, IconOrientation } from 'src/components/Dropdown';
+import { MenuDotsDropdown } from 'src/components';
+import { IconOrientation } from 'src/components/Dropdown/types';
 import { Menu, MenuProps } from 'src/components/Menu';
 
 /**

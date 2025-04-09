@@ -16,7 +16,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import Button, { OnClickHandler } from 'src/components/Button';
+import { Button } from 'src/components';
+import { OnClickHandler } from 'src/components/Button/types';
 import { FC } from 'react';
 import { styled, t } from '@superset-ui/core';
 

@@ -18,14 +18,13 @@
  */
 import { t, styled } from '@superset-ui/core';
 import { useCallback, useEffect, useRef, useState, ReactNode } from 'react';
-import Alert from 'src/components/Alert';
+import { Alert, Button, Checkbox, EmptyState } from 'src/components';
 import cx from 'classnames';
-import Button from 'src/components/Button';
 import { Icons } from 'src/components/Icons';
-import Checkbox from 'src/components/Checkbox';
 import Pagination from 'src/components/Pagination';
 import TableCollection from 'src/components/TableCollection';
 import BulkTagModal from 'src/features/tags/BulkTagModal';
+import type { EmptyStateProps } from 'src/components/EmptyState/types';
 import CardCollection from './CardCollection';
 import FilterControls from './Filters';
 import { CardSortSelect } from './CardSortSelect';
@@ -37,7 +36,6 @@ import {
   ViewModeType,
 } from './types';
 import { ListViewError, useListViewState } from './utils';
-import { EmptyState, EmptyStateProps } from '../EmptyState';
 
 const ListViewStyles = styled.div`
   text-align: center;

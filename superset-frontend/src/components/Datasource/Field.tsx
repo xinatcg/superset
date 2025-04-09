@@ -19,7 +19,7 @@
 import { useCallback, ReactNode, ReactElement, cloneElement } from 'react';
 
 import { css, SupersetTheme } from '@superset-ui/core';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { FormItem, FormLabel } from 'src/components/Form';
 
 const formItemInlineCss = css`

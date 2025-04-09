@@ -18,10 +18,9 @@
  */
 
 import { css, styled, SupersetClient, useTheme, t } from '@superset-ui/core';
-import Modal from 'src/components/Modal';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Icons } from 'src/components/Icons';
-import { Select, AsyncSelect } from 'src/components';
+import { Modal, Select, AsyncSelect } from 'src/components';
 import { Input } from 'src/components/Input';
 import rison from 'rison';
 import { LabeledErrorBoundInput } from 'src/components/Form';

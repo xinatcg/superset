@@ -26,7 +26,7 @@ import {
 } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { css } from '@superset-ui/core';
-import ErrorBoundary from 'src/components/ErrorBoundary';
+import { ErrorBoundary } from 'src/components';
 import Layout from 'src/components/Layout';
 import Loading from 'src/components/Loading';
 import Menu from 'src/features/home/Menu';

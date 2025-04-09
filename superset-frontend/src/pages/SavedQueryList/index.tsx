@@ -38,7 +38,12 @@ import { useSelector } from 'react-redux';
 import Popover from 'src/components/Popover';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import { useListViewResource } from 'src/views/CRUD/hooks';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
+import {
+  ConfirmStatusChange,
+  Tooltip,
+  ModifiedInfo,
+  DeleteModal,
+} from 'src/components';
 import handleResourceExport from 'src/utils/export';
 import SubMenu, { ButtonProps, SubMenuProps } from 'src/features/home/SubMenu';
 import ListView, {
@@ -47,15 +52,12 @@ import ListView, {
   ListViewProps,
 } from 'src/components/ListView';
 import Loading from 'src/components/Loading';
-import DeleteModal from 'src/components/DeleteModal';
 import ActionsBar, { ActionProps } from 'src/components/ListView/ActionsBar';
 import TagsList from 'src/components/TagsList';
-import { Tooltip } from 'src/components/Tooltip';
 import { commonMenuData } from 'src/features/home/commonMenuData';
 import { QueryObjectColumns, SavedQueryObject } from 'src/views/CRUD/types';
 import Tag from 'src/types/TagType';
 import ImportModelsModal from 'src/components/ImportModal/index';
-import { ModifiedInfo } from 'src/components/AuditInfo';
 import { loadTags } from 'src/components/Tag/utils';
 import { Icons } from 'src/components/Icons';
 import { UserWithPermissionsAndRoles } from 'src/types/bootstrapTypes';

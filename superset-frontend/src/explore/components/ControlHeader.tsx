@@ -19,7 +19,7 @@
 import { FC, ReactNode, useMemo, useRef } from 'react';
 import { t, css, useTheme, SupersetTheme } from '@superset-ui/core';
 import { InfoTooltipWithTrigger } from '@superset-ui/chart-controls';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { FormLabel } from 'src/components/Form';
 import { Icons } from 'src/components/Icons';
 

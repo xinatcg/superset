@@ -27,8 +27,8 @@ import {
   FeatureFlag,
 } from '@superset-ui/core';
 import InfoTooltip from 'src/components/InfoTooltip';
-import Checkbox, { CheckboxChangeEvent } from 'src/components/Checkbox';
-import Collapse from 'src/components/Collapse';
+import { Checkbox, Collapse } from 'src/components';
+import { CheckboxChangeEvent } from 'src/components/Checkbox/types';
 import { Input } from 'src/components/Input';
 import {
   StyledInputContainer,

@@ -31,8 +31,7 @@ import dayjs from 'dayjs';
 import rison from 'rison';
 
 import ActionsBar, { ActionProps } from 'src/components/ListView/ActionsBar';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
-import DeleteModal from 'src/components/DeleteModal';
+import { ConfirmStatusChange, DeleteModal } from 'src/components';
 import ListView, { ListViewProps } from 'src/components/ListView';
 import SubMenu, { SubMenuProps } from 'src/features/home/SubMenu';
 import withToasts from 'src/components/MessageToasts/withToasts';

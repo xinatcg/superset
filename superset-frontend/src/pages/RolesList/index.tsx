@@ -31,8 +31,7 @@ import ListView, {
   Filters,
   FilterOperator,
 } from 'src/components/ListView';
-import DeleteModal from 'src/components/DeleteModal';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
+import { ConfirmStatusChange, DeleteModal } from 'src/components';
 import {
   FormattedPermission,
   PermissionResource,

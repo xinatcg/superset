@@ -19,7 +19,7 @@
 import { useCallback, useState } from 'react';
 import { t, styled, useTheme } from '@superset-ui/core';
 import { Input } from 'src/components/Input';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { Icons } from 'src/components/Icons';
 
 const StyledInput = styled(Input)`

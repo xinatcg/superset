@@ -18,7 +18,7 @@
  */
 import { ReactNode, SyntheticEvent } from 'react';
 import { styled, css, SupersetTheme, t } from '@superset-ui/core';
-import Button from 'src/components/Button';
+import { Button } from 'src/components';
 
 // Importing svg images
 import FilterResultsImage from 'src/assets/images/filter-results.svg';
@@ -37,6 +37,7 @@ import EmptyQueryImage from 'src/assets/images/empty-query.svg';
 import EmptyTableImage from 'src/assets/images/empty-table.svg';
 import EmptyImage from 'src/assets/images/empty.svg';
 import { Empty } from './Empty';
+import type { EmptyStateProps, EmptyStateSize } from './types';
 
 export const imageMap = {
   'chart.svg': <ChartImage />,
@@ -54,18 +55,6 @@ export const imageMap = {
   'star-circle.svg': <StarCircleImage />,
   'union.svg': <UnionImage />,
   'vector.svg': <VectorImage />,
-};
-
-type EmptyStateSize = 'small' | 'medium' | 'large';
-
-export type EmptyStateProps = {
-  title?: ReactNode;
-  description?: ReactNode;
-  image?: ReactNode | string;
-  buttonText?: ReactNode;
-  buttonAction?: (event: SyntheticEvent) => void;
-  size?: EmptyStateSize;
-  children?: ReactNode;
 };
 
 const EmptyStateContainer = styled.div`
@@ -109,13 +98,6 @@ const Description = styled.p<{ size: EmptyStateSize }>`
     font-size: ${size === 'large' ? theme.fontSize : theme.fontSizeSM}px;
     color: ${theme.colorTextQuaternary};
     margin-top: ${theme.sizeUnit * 2}px;
-  `}
-`;
-
-const ActionButton = styled(Button)`
-  ${({ theme }) => css`
-    margin-top: ${theme.sizeUnit * 4}px;
-    z-index: 1;
   `}
 `;
 
@@ -185,13 +167,17 @@ export const EmptyState: React.FC<EmptyStateProps> = ({
         </Description>
       )}
       {buttonText && buttonAction && (
-        <ActionButton
+        <Button
           buttonStyle="primary"
           onClick={buttonAction}
           onMouseDown={handleMouseDown}
+          css={(theme: SupersetTheme) => css`
+            margin-top: ${theme.sizeUnit * 4}px;
+            z-index: 1;
+          `}
         >
           {buttonText}
-        </ActionButton>
+        </Button>
       )}
       {children}
     </div>

@@ -19,7 +19,7 @@
 import { render } from 'spec/helpers/testing-library';
 import { IconTooltip } from 'src/components/IconTooltip';
 
-jest.mock('src/components/Tooltip', () => ({
+jest.mock('src/components', () => ({
   Tooltip: () => <div data-test="mock-tooltip" />,
 }));
 

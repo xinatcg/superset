@@ -59,17 +59,19 @@ import { PluginFilterSelectCustomizeProps } from 'src/filters/components/Select/
 import { useSelector } from 'react-redux';
 import { getChartDataRequest } from 'src/components/Chart/chartAction';
 import { Input } from 'src/components/Input';
-import { Select } from 'src/components';
-import Collapse from 'src/components/Collapse';
-import BasicErrorAlert from 'src/components/ErrorMessage/BasicErrorAlert';
-import ErrorMessageWithStackTrace from 'src/components/ErrorMessage/ErrorMessageWithStackTrace';
+import {
+  BasicErrorAlert,
+  ErrorMessageWithStackTrace,
+  Collapse,
+  Select,
+  Tooltip,
+} from 'src/components';
 import { FormItem, FormInstance } from 'src/components/Form';
 import { Icons } from 'src/components/Icons';
 import Loading from 'src/components/Loading';
 import { addDangerToast } from 'src/components/MessageToasts/actions';
 import { Radio } from 'src/components/Radio';
 import Tabs from 'src/components/Tabs';
-import { Tooltip } from 'src/components/Tooltip';
 import { cachedSupersetGet } from 'src/utils/cachedSupersetGet';
 import {
   Chart,

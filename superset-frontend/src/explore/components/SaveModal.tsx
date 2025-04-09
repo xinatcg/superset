@@ -34,11 +34,8 @@ import {
 } from '@superset-ui/core';
 import { Input } from 'src/components/Input';
 import { Form, FormItem } from 'src/components/Form';
-import Alert from 'src/components/Alert';
-import Modal from 'src/components/Modal';
+import { Alert, Button, AsyncSelect, Modal } from 'src/components';
 import { Radio } from 'src/components/Radio';
-import Button from 'src/components/Button';
-import { AsyncSelect } from 'src/components';
 import Loading from 'src/components/Loading';
 import { canUserEditDashboard } from 'src/dashboard/util/permissionUtils';
 import { setSaveChartModalVisibility } from 'src/explore/actions/saveModalActions';

@@ -31,8 +31,7 @@ import {
 
 import { t, isFeatureEnabled, FeatureFlag, css } from '@superset-ui/core';
 import ImageLoader from 'src/components/ListViewCard/ImageLoader';
-import { usePluginContext } from 'src/components/DynamicPlugins';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip, usePluginContext } from 'src/components';
 import { GenericLink } from 'src/components/GenericLink/GenericLink';
 import { Theme } from '@emotion/react';
 

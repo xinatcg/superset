@@ -29,7 +29,7 @@ import {
   useElementOnScreen,
 } from '@superset-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import ErrorBoundary from 'src/components/ErrorBoundary';
+import { ErrorBoundary, EmptyState, BasicErrorAlert } from 'src/components';
 import BuilderComponentPane from 'src/dashboard/components/BuilderComponentPane';
 import DashboardHeader from 'src/dashboard/components/Header';
 import { Icons } from 'src/components/Icons';
@@ -62,7 +62,6 @@ import {
 } from 'src/dashboard/util/constants';
 import FilterBar from 'src/dashboard/components/nativeFilters/FilterBar';
 import Loading from 'src/components/Loading';
-import { EmptyState } from 'src/components/EmptyState';
 import { useUiConfig } from 'src/components/UiConfigContext';
 import ResizableSidebar from 'src/components/ResizableSidebar';
 import {
@@ -74,7 +73,6 @@ import {
   OPEN_FILTER_BAR_WIDTH,
   EMPTY_CONTAINER_Z_INDEX,
 } from 'src/dashboard/constants';
-import BasicErrorAlert from 'src/components/ErrorMessage/BasicErrorAlert';
 import { getRootLevelTabsComponent, shouldFocusTabs } from './utils';
 import DashboardContainer from './DashboardContainer';
 import { useNativeFilters } from './state';

@@ -30,8 +30,13 @@ import {
 } from '@superset-ui/core';
 import { extendedDayjs } from 'src/utils/dates';
 import ActionsBar, { ActionProps } from 'src/components/ListView/ActionsBar';
-import FacePile from 'src/components/FacePile';
-import { Tooltip } from 'src/components/Tooltip';
+import {
+  FacePile,
+  Tooltip,
+  ModifiedInfo,
+  ConfirmStatusChange,
+  DeleteModal,
+} from 'src/components';
 import ListView, {
   FilterOperator,
   Filters,
@@ -43,8 +48,6 @@ import { DATETIME_WITH_TIME_ZONE } from 'src/constants';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import AlertStatusIcon from 'src/features/alerts/components/AlertStatusIcon';
 import RecipientIcon from 'src/features/alerts/components/RecipientIcon';
-import ConfirmStatusChange from 'src/components/ConfirmStatusChange';
-import DeleteModal from 'src/components/DeleteModal';
 import LastUpdated from 'src/components/LastUpdated';
 import {
   useListViewResource,
@@ -55,7 +58,6 @@ import { isUserAdmin } from 'src/dashboard/util/permissionUtils';
 import Owner from 'src/types/Owner';
 import AlertReportModal from 'src/features/alerts/AlertReportModal';
 import { AlertObject, AlertState } from 'src/features/alerts/types';
-import { ModifiedInfo } from 'src/components/AuditInfo';
 import { QueryObjectColumns } from 'src/views/CRUD/types';
 import { Icons } from 'src/components/Icons';
 

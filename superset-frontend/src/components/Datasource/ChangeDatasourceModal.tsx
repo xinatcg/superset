@@ -25,17 +25,15 @@ import {
   ChangeEvent,
 } from 'react';
 
-import Alert from 'src/components/Alert';
 import {
   SupersetClient,
   t,
   styled,
   getClientErrorObject,
 } from '@superset-ui/core';
+import { Alert, Button, FacePile } from 'src/components';
 import TableView, { EmptyWrapperType } from 'src/components/TableView';
 import { ServerPagination, SortByType } from 'src/components/TableView/types';
-import StyledModal from 'src/components/Modal';
-import Button from 'src/components/Button';
 import { useListViewResource } from 'src/views/CRUD/hooks';
 import Dataset from 'src/types/Dataset';
 import { useDebouncedEffect } from 'src/explore/exploreUtils';
@@ -48,7 +46,8 @@ import {
 } from 'src/features/datasets/constants';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import { InputRef } from 'antd-v5';
-import FacePile from '../FacePile';
+import { Modal as StyledModal } from '../Modal';
+import type { Datasource, ChangeDatasourceModalProps } from './types';
 
 const CONFIRM_WARNING_MESSAGE = t(
   'Warning! Changing the dataset may break the chart if the metadata does not exist.',
@@ -58,21 +57,6 @@ const CHANGE_WARNING_MSG = t(
   'Changing the dataset may break the chart if the chart relies ' +
     'on columns or metadata that does not exist in the target dataset',
 );
-
-interface Datasource {
-  type: string;
-  id: number;
-  uid: string;
-}
-
-interface ChangeDatasourceModalProps {
-  addDangerToast: (msg: string) => void;
-  addSuccessToast: (msg: string) => void;
-  onChange: (uid: string) => void;
-  onDatasourceSave: (datasource: object, errors?: Array<any>) => {};
-  onHide: () => void;
-  show: boolean;
-}
 
 const CustomStyledModal = styled(StyledModal)`
   .antd5-modal-body {

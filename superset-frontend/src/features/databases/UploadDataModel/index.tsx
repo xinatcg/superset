@@ -31,11 +31,8 @@ import {
   SupersetTheme,
   t,
 } from '@superset-ui/core';
-import Modal from 'src/components/Modal';
-import Button from 'src/components/Button';
+import { Button, Collapse, Select, AsyncSelect, Modal } from 'src/components';
 import { Switch, SwitchProps } from 'src/components/Switch';
-import Collapse from 'src/components/Collapse';
-import { Select, AsyncSelect } from 'src/components';
 import Upload, { UploadChangeParam, UploadFile } from 'src/components/Upload';
 import { Row, Col } from 'src/components/Grid';
 import { Icons } from 'src/components/Icons';

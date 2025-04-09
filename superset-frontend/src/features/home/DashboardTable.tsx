@@ -37,7 +37,7 @@ import {
 } from 'src/views/CRUD/utils';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import Loading from 'src/components/Loading';
-import DeleteModal from 'src/components/DeleteModal';
+import { DeleteModal } from 'src/components';
 import PropertiesModal from 'src/dashboard/components/PropertiesModal';
 import DashboardCard from 'src/features/dashboards/DashboardCard';
 import { Icons } from 'src/components/Icons';

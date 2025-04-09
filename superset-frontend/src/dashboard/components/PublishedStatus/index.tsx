@@ -18,7 +18,7 @@
  */
 import { Component } from 'react';
 import { t } from '@superset-ui/core';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { PublishedLabel } from 'src/components/Label';
 import { HeaderProps, HeaderDropdownProps } from '../Header/types';
 

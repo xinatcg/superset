@@ -19,7 +19,7 @@
 import { forwardRef, RefObject } from 'react';
 import { css, QueryData, SupersetTheme } from '@superset-ui/core';
 import RowCountLabel from 'src/explore/components/RowCountLabel';
-import CachedLabel from 'src/components/CachedLabel';
+import { CachedLabel } from 'src/components';
 import Timer from 'src/components/Timer';
 import { Type } from 'src/components/Label';
 

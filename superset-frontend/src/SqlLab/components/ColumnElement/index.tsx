@@ -19,7 +19,7 @@
 import { ReactNode } from 'react';
 import { ClassNames } from '@emotion/react';
 import { styled, useTheme, t } from '@superset-ui/core';
-import { Tooltip } from 'src/components/Tooltip';
+import { Tooltip } from 'src/components';
 import { Flex } from 'src/components/Flex';
 
 const StyledTooltip = (props: any) => {

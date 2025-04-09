@@ -23,7 +23,7 @@ import { Provider } from 'react-redux';
 import { styledMount as mount } from 'spec/helpers/theming';
 
 import AnnotationList from 'src/pages/AnnotationList';
-import DeleteModal from 'src/components/DeleteModal';
+import { DeleteModal } from 'src/components';
 import ListView from 'src/components/ListView';
 import SubMenu from 'src/features/home/SubMenu';
 

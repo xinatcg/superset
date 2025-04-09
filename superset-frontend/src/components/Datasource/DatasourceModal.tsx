@@ -18,8 +18,12 @@
  */
 import { FunctionComponent, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Alert from 'src/components/Alert';
-import Button from 'src/components/Button';
+import {
+  Alert,
+  Button,
+  AsyncEsmComponent,
+  ErrorMessageWithStackTrace,
+} from 'src/components';
 import {
   isDefined,
   styled,
@@ -32,9 +36,6 @@ import {
 } from '@superset-ui/core';
 
 import { Icons } from 'src/components/Icons';
-import Modal from 'src/components/Modal';
-import AsyncEsmComponent from 'src/components/AsyncEsmComponent';
-import ErrorMessageWithStackTrace from 'src/components/ErrorMessage/ErrorMessageWithStackTrace';
 import withToasts from 'src/components/MessageToasts/withToasts';
 import {
   startMetaDataLoading,
@@ -45,6 +46,7 @@ import {
   fetchSyncedColumns,
   updateColumns,
 } from 'src/components/Datasource/utils';
+import { Modal } from '../Modal';
 import { DatasetObject } from '../../features/datasets/types';
 
 const DatasourceEditor = AsyncEsmComponent(() => import('./DatasourceEditor'));

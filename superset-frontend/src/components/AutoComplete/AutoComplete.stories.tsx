@@ -17,10 +17,9 @@
  * under the License.
  */
 import { useState } from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import AutoComplete, {
-  AntAutoCompleteProps,
-} from 'src/components/AutoComplete';
+import type { Meta, StoryObj } from '@storybook/react';
+import { AutoComplete } from '.';
+import type { AntAutoCompleteProps } from './types';
 
 export default {
   title: 'Components/AutoComplete',

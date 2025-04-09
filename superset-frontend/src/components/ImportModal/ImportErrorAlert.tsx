@@ -21,7 +21,7 @@ import { FunctionComponent } from 'react';
 import { t } from '@superset-ui/core';
 
 import { getDatabaseDocumentationLinks } from 'src/views/CRUD/hooks';
-import ErrorAlert from 'src/components/ErrorMessage/ErrorAlert';
+import { ErrorAlert } from 'src/components';
 
 const supersetTextDocs = getDatabaseDocumentationLinks();
 export const DOCUMENTATION_LINK = supersetTextDocs

@@ -18,7 +18,7 @@
  */
 import type { Meta, StoryObj } from '@storybook/react';
 import { Space } from 'src/components/Space';
-import { AvatarProps } from 'antd-v5/es/avatar';
+import { AvatarProps } from 'src/components/Avatar/types';
 import { SkeletonButtonProps } from 'antd-v5/es/skeleton/Button';
 import Skeleton, { type SkeletonProps } from './index';
 

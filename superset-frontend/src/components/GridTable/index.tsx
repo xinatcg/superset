@@ -27,7 +27,7 @@ import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-quartz.css';
 
 import copyTextToClipboard from 'src/utils/copy';
-import ErrorBoundary from 'src/components/ErrorBoundary';
+import { ErrorBoundary } from 'src/components';
 
 import { PIVOT_COL_ID, GridSize } from './constants';
 import Header from './Header';

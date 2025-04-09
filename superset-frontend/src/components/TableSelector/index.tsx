@@ -31,14 +31,11 @@ import {
   getClientErrorMessage,
   getClientErrorObject,
 } from '@superset-ui/core';
-import { Select } from 'src/components';
+import { Select, CertifiedBadge, DatabaseSelector } from 'src/components';
 import { FormLabel } from 'src/components/Form';
 import { Icons } from 'src/components/Icons';
-import DatabaseSelector, {
-  DatabaseObject,
-} from 'src/components/DatabaseSelector';
+import type { DatabaseObject } from 'src/components/DatabaseSelector/types';
 import RefreshLabel from 'src/components/RefreshLabel';
-import CertifiedBadge from 'src/components/CertifiedBadge';
 import WarningIconWithTooltip from 'src/components/WarningIconWithTooltip';
 import { useToasts } from 'src/components/MessageToasts/withToasts';
 import { useTables, Table } from 'src/hooks/apiResources';

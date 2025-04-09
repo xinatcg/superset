@@ -27,7 +27,7 @@ import { t, styled } from '@superset-ui/core';
 import { parseDate } from 'chrono-node';
 import ModalTrigger, { ModalTriggerRef } from 'src/components/ModalTrigger';
 import { Form, FormItem } from 'src/components/Form';
-import Button from 'src/components/Button';
+import { Button } from 'src/components';
 import getBootstrapData from 'src/utils/getBootstrapData';
 
 const bootstrapData = getBootstrapData();

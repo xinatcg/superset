@@ -33,12 +33,11 @@ import {
   addDangerToast,
   resetState,
 } from 'src/SqlLab/actions/sqlLab';
-import Button from 'src/components/Button';
+import { Button, EmptyState } from 'src/components';
 import { t, styled, css } from '@superset-ui/core';
 import { TableSelectorMultiple } from 'src/components/TableSelector';
 import useQueryEditor from 'src/SqlLab/hooks/useQueryEditor';
-import type { DatabaseObject } from 'src/components/DatabaseSelector';
-import { EmptyState } from 'src/components/EmptyState';
+import type { DatabaseObject } from 'src/components/DatabaseSelector/types';
 import {
   getItem,
   LocalStorageKeys,

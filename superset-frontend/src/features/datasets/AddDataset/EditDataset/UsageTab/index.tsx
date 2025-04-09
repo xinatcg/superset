@@ -32,7 +32,7 @@ import Table, {
   TableSize,
   OnChangeFunction,
 } from 'src/components/Table';
-import { EmptyState } from 'src/components/EmptyState';
+import { EmptyState } from 'src/components';
 import ChartImage from 'src/assets/images/chart.svg';
 import { Icons } from 'src/components/Icons';
 import { useToasts } from 'src/components/MessageToasts/withToasts';
