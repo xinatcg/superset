@@ -47,9 +47,6 @@ services:
     volumes:
       - db_home:/var/lib/postgresql/data
       - ./docker/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
-    environment:
-      PGPORT: 5431
-    command: postgres -p 5431
 
   superset:
     env_file:
